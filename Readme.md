@@ -1,4 +1,4 @@
-# Project Name
+# BudgetBuddy - BackEnd  
 
 This is a finance-based application that allows users to join groups and contribute their financial information towards achieving budgeting goals.
 
