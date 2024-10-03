@@ -2,10 +2,10 @@
   "name": "mongoserver",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon server",
+    "start": "nodemon server.js",
     "seed": "node ./db/seeds/seed.js"
   },
   "keywords": [],
