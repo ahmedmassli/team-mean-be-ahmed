@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "node src/server.js",
+    "start": "nodemon server",
     "seed": "node ./db/seeds/seed.js"
   },
   "keywords": [],

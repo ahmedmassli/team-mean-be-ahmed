@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
-const connectDB = require("../connect.js");
+const connectDB = require("./connect.js");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
@@ -23,30 +23,30 @@ const {
   getUserTransactions,
   getSingleTransaction,
   postUserTransaction,
-} = require("../Controllers/TransactionController.js");
+} = require("./Controllers/TransactionController");
 
 const {
   getExpenseCategories,
   getExpenseCategoriesByName,
   getsubCategoriesByName,
-} = require("../Controllers/ExpenseController.js");
+} = require("./Controllers/ExpenseController");
 
 const {
   getCurrencies,
   getCurrencyByName,
-} = require("../Controllers/CurrencyController.js");
+} = require("./Controllers/CurrencyController");
 
 const {
   getIncomeCategories,
   getIncomeCategoryByName,
   postIncomeByUserId,
-} = require("../Controllers/IncomeController.js");
+} = require("./Controllers/IncomeController");
 
 const {
   getUserGoals,
   getUserGoalById,
   postUserGoal,
-} = require("../Controllers/GoalController.js");
+} = require("./Controllers/GoalController.js");
 
 const {
   getUsers,
@@ -56,9 +56,9 @@ const {
   getUserBudget,
   getUserExpenses,
   postNewUser,
-} = require("../Controllers/UserControllers.js");
+} = require("./Controllers/UserControllers.js");
 
-const { postNewUserBudget } = require("../Controllers/BudgetControllers.js");
+const { postNewUserBudget } = require("./Controllers/BudgetControllers.js");
 
 // This route can be changed / used
 app.get("/", (req, res) => {
