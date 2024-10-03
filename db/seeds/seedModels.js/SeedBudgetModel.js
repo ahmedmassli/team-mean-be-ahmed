@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const CategorySpendsSchema = new mongoose.Schema({
   categoryId: { type: Number, required: true },
@@ -10,7 +10,7 @@ const CategorySpendsSchema = new mongoose.Schema({
 });
 
 const CategoryIncomeSchema = new mongoose.Schema({
-  categoryId: { type: Number, required: true },
+  categoryId: { type: String, required: true },
   amount: { type: Number, required: true },
   mainCategoryName: { type: String, required: true },
   icon: { type: String, required: true },
@@ -19,7 +19,7 @@ const CategoryIncomeSchema = new mongoose.Schema({
 });
 
 const BudgetSchema = new mongoose.Schema({
-  user_id: { type: {}, required: true },
+  user_id: { type: String, required: true },
   income_t_count: { type: Number, required: false },
   expense_t_count: { type: Number, required: false },
   balance: { type: Number, required: true },
@@ -57,6 +57,6 @@ const BudgetSchema = new mongoose.Schema({
   updatedAt: { type: Date, default: Date.now },
 });
 
-const Budget = mongoose.model("Budget", BudgetSchema);
+const Budget = mongoose.model('Budget', BudgetSchema);
 
 module.exports = Budget;
